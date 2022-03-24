@@ -4,6 +4,7 @@ from tracetools_launch.action import Trace
 
 import sys
 import datetime
+from distutils.util import strtobool
 
 
 def generate_launch_description():
@@ -20,7 +21,7 @@ def generate_launch_description():
 			try:
 				caret_light = strtobool(arg.split(":=")[1]) # 0 or 1
 			except:
-				print("Invalid arguments 'caret_event'.")
+				print("Invalid arguments 'caret_light'.")
 				print("Start tracing with 'ros2*'.")
 			
 	if caret_light:
