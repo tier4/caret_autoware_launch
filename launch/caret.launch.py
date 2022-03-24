@@ -20,7 +20,8 @@ def generate_launch_description():
 			try:
 				caret_light = strtobool(arg.split(":=")[1]) # 0 or 1
 			except:
-				print("Invalid arguments 'caret_event'. Start tracing with 'ros2*'.")
+				print("Invalid arguments 'caret_event'.")
+				print("Start tracing with 'ros2*'.")
 			
 	if caret_light:
 		caret_event = [ "ros2:*callback*",
