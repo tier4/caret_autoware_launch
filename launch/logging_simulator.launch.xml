@@ -26,13 +26,11 @@
   <arg name="scenario_simulation" default="true" description="use scenario simulation"/>
 
   <arg name="caret_session" default="" description="directory name where trace data is stored (session name for LTTng).  default: autoware_launch_trace_yyyymmdd-hhmmss"/>
-  <arg name="caret_event" default="" description="event name traced by caret. default: 'ros2*'"/>
   <arg name="caret_light" default="" description="launch light caret. default: 'False'"/>
 
   <!-- caret trace -->
   <include file="$(find-pkg-share caret_autoware_launch)/launch/caret.launch.py">
     <arg name="caret_session" value="$(var caret_session)"/>
-    <arg name="caret_event" value="$(var caret_event)"/>
     <arg name="caret_light" value="$(var caret_light)"/>
   </include>
 

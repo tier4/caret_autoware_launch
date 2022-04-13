@@ -15,8 +15,6 @@ def generate_launch_description():
 	for arg in sys.argv:
 		if arg.startswith("caret_session:="):
 			caret_session = arg.split(":=")[1]
-		elif arg.startswith("caret_event:="):
-			caret_event = arg.split(":=")[1]
 		elif arg.startswith("caret_light:="):
 			try:
 				caret_light = strtobool(arg.split(":=")[1]) # 0 or 1

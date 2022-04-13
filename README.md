@@ -15,5 +15,5 @@ Please see `<exec_depend>` in `package.xml`.
 You can use the command as follows at shell script to launch `*.launch.xml` in `launch` directory.
 
 ```bash
-ros2 launch caret_autoware_launch autoware.launch.xml map_path:=/path/to/map_folder vehicle_model:=lexus sensor_model:=aip_xx1 caret_session:=autoware_launch_trace caret_event:="ros2*"
+ros2 launch caret_autoware_launch autoware.launch.xml map_path:=/path/to/map_folder vehicle_model:=lexus sensor_model:=aip_xx1 caret_session:=autoware_launch_trace
 ```
