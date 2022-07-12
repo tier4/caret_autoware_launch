@@ -19,7 +19,7 @@
   <arg name="vehicle_simulation" default="true" description="use vehicle simulation"/>
 
   <arg name="caret_session" default="" description="directory name where trace data is stored (session name for LTTng).  default: autoware_launch_trace_yyyymmdd-hhmmss"/>
-  <arg name="caret_light" default="" description="launch light caret. default: 'False'"/>
+  <arg name="caret_light" default="true" description="launch light caret. default: 'True'"/>
 
   <!-- caret trace -->
   <include file="$(find-pkg-share caret_autoware_launch)/launch/caret.launch.py">
