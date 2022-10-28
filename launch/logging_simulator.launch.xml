@@ -19,11 +19,12 @@
   <arg name="rviz" default="true" description="launch rviz" />
   <arg name="lanelet2_map_file" default="lanelet2_map.osm" description="lanelet2 map file name"/>
   <arg name="pointcloud_map_file" default="pointcloud_map.pcd" description="pointcloud map file name"/>
-  <arg name="vehicle_simulation" default="false" description="use vehicle simulation"/>
+  <arg name="perception_mode" default="camera_lidar_fusion" description="select perception mode. camera_lidar_radar_fusion, camera_lidar_fusion, lidar_radar_fusion, lidar, radar"/>
   <arg name="use_pointcloud_container" default="true" description="launch pointcloud container"/>
   <arg name="pointcloud_container_name" default="pointcloud_container"/>
+  <arg name="launch_vehicle_interface" default="false"/>
   <!-- Optional parameters for scenario simulation -->
-  <arg name="scenario_simulation" default="true" description="use scenario simulation"/>
+  <arg name="scenario_simulation" default="false" description="use scenario simulation"/>
 
   <arg name="caret_session" default="" description="directory name where trace data is stored (session name for LTTng).  default: autoware_launch_trace_yyyymmdd-hhmmss"/>
   <arg name="caret_light" default="true" description="launch light caret. default: 'True'"/>
@@ -52,9 +53,10 @@
     <arg name="rviz" value="$(var rviz)" />
     <arg name="lanelet2_map_file" value="$(var lanelet2_map_file)" />
     <arg name="pointcloud_map_file" value="$(var pointcloud_map_file)" />
-    <arg name="vehicle_simulation" value="$(var vehicle_simulation)" />
+    <arg name="perception_mode" value="$(var perception_mode)" />
     <arg name="use_pointcloud_container" value="$(var use_pointcloud_container)" />
     <arg name="pointcloud_container_name" value="$(var pointcloud_container_name)" />
+    <arg name="launch_vehicle_interface" value="$(var launch_vehicle_interface)" />
     <arg name="scenario_simulation" value="$(var scenario_simulation)" />
 </include>
 
