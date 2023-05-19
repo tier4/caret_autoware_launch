@@ -27,6 +27,7 @@ def generate_launch_description():
 						"ros2:dispatch*",
 						"ros2:rclcpp*",
 						"ros2:rcl_*init",
+						"ros2:rmw_take",
 						"*callback_group*",
 						"ros2_caret:*callback*",
 						"ros2_caret:dispatch*",
