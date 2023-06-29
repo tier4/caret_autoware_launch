@@ -20,7 +20,7 @@ export CARET_IGNORE_NODES=\
 /system/system_monitor/system_monitor/system_monitor_container:\
 /transform_listener_impl*:\
 /system/dummy_diag_publisher/dummy_diag_publisher_*:\
-/care_trace_*:\
+/caret_trace_*:\
 "
 
 export CARET_IGNORE_TOPICS=\
