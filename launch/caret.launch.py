@@ -2,6 +2,7 @@
 import launch
 from tracetools_launch.action import Trace
 
+import os
 import sys
 import datetime
 from distutils.util import strtobool
@@ -37,6 +38,8 @@ def generate_launch_description():
 						"ros2_caret:*executor",
 						"ros2_caret:dds_bind*",
 						]
+		if os.environ["ROS_DISTRO"] in ["iron", "rolling"]:
+			caret_event.append("ros2:rcl_publish")
 
 	if caret_session == "":
 		dt_now = datetime.datetime.now()
