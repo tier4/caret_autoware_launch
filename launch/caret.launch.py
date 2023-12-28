@@ -38,7 +38,7 @@ def generate_launch_description():
 						"ros2_caret:*executor",
 						"ros2_caret:dds_bind*",
 						]
-		if os.environ["ROS_DISTRO"] in ["iron", "rolling"]:
+		if os.environ["ROS_DISTRO"][0] >= "i":
 			caret_event.append("ros2:rcl_publish")
 
 	if caret_session == "":
